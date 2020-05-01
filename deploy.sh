@@ -13,9 +13,6 @@ else
   git config --global user.email "TravisCI@users.noreply.github.com"
   git remote rm origin
   git remote add origin "git@github.com:${GITHUB_REPOSITORY}.git"
-  eval "$(ssh-agent)"
-  ssh-add <(echo "$GH_PAGES_DEPLOY_KEY")
-  trap "ssh-agent -k" EXIT
 
   mkdocs build
   git clone git@github.com:${GITHUB_REPOSITORY}.git repo
