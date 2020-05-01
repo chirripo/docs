@@ -4,9 +4,11 @@ set -euxo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$ROOT"
 
-pip3 install -r requirements.txt
-
-if [ -n "${GITHUB_REPOSITORY:-}" ] && ! git config --get user.name; then
+if [[ -z "$GITHUB_REPOSITORY" ]]
+then
+  echo "GITHUB_REPOSITORY is not set. Exiting"
+  exit 1
+else
   git config --global user.name "TravisCI"
   git config --global user.email "TravisCI@users.noreply.github.com"
   git remote rm origin

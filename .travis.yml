@@ -1,0 +1,11 @@
+language: python
+install:
+  - pip install -r requirements.txt
+script:
+  - pytest
+  - mkdocs build
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: master
