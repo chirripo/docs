@@ -1,9 +1,9 @@
-site_name: Test docs
-site_description: 'A docs test'
+site_name: Chirripo Docs
+site_description: 'Documentation site for Chirripo'
 site_author: 'Michael Hausenblas'
 docs_dir: docs/
-repo_name: 'mhausenblas/actions-sandbox'
-repo_url: 'https://github.com/mhausenblas/actions-sandbox'
+repo_name: 'chirripo/dcs'
+repo_url: 'https://github.com/chirripo/docs'
 nav:
     - Home: index.md
 theme:

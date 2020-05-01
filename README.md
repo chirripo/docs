@@ -1,3 +1,3 @@
-# Example MkDocs deploy GitHub Action
+# Docs for Chirripo
 
-This is a template that uses the  [MkDocs deploy](https://github.com/marketplace/actions/deploy-mkdocs) GitHub action.
+mkdocs repo for Chirripo docs.
