@@ -8,3 +8,8 @@ nav:
     - Home: index.md
 theme:
   name: 'material'
+  language: en
+  palette:
+    primary: green
+    accent: indigo
+  logo: images/logo.svg
