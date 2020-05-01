@@ -4,6 +4,8 @@ set -euxo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$ROOT"
 
+echo "Github Repository: ${GITHUB_REPOSITORY}"
+
 if [[ -z "$GITHUB_REPOSITORY" ]]
 then
   echo "GITHUB_REPOSITORY is not set. Exiting"
@@ -15,6 +17,7 @@ else
   git remote add origin "git@github.com:${GITHUB_REPOSITORY}.git"
 
   mkdocs build
+  ls -alh
   git clone git@github.com:${GITHUB_REPOSITORY}.git repo
   cd repo
   git checkout gh-pages
@@ -22,7 +25,8 @@ else
   rm -rf ./!(.git|.|..)
   cp -r ../site/*
   cp -r ../images .
-  cp -r ../CNAME .  
+  cp -r ../CNAME .
+  git status
   git add -A .
   git commit -m "Committed from ${TRAVIS_COMMIT}"
   git push origin gh-pages -f
