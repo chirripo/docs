@@ -18,7 +18,7 @@ To use Chirripo, you need to add the composer package to any existing project, c
 
 Only requirements are:
 
-- Have a composer managed project
+- Composer managed project
 - Docker
 - Docker Compose
 
