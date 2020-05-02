@@ -8,12 +8,14 @@ nav:
     - Home: index.md
     - Getting Started: getting-started.md
     - Usage: usage.md
+    - Variables description: variables-description.md
     - Commands:
       - Available Commands: commands/index.md
       - db-import: commands/db-import.md
       - docker-compose: commands/docker-compose.md
       - down: commands/down.md
       - drush: commands/drush.md
+      - list: commands/list.md
       - logs: commands/logs.md
       - mysql: commands/mysql.md
       - php-info: commands/php-info.md
@@ -24,6 +26,9 @@ nav:
       - status: commands/status.md
       - stop: commands/stop.md
       - url: commands/url.md
+    - How-to:
+      - How-to guides: how-to/index.md
+      - Setup Xdebug: how-to/setup-xdebug.md
     - Contributing: contributing.md
 theme:
   name: 'material'

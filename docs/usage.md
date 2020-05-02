@@ -2,32 +2,42 @@
 
 ## Requirements
 
-And how to install them
+To run Chirripo you need:
+
+- Composer managed project
+- Docker (You can get it at [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/) if not installed)
+- Docker Compose (You can get it at [https://docs.docker.com/compose/install/](https://docs.docker.com/get-docker/) if not installed)
 
 ## Install package
 
-## Copy variables
+Install as with any other composer package:
 
-And describe variables
+```
+composer require --dev chirripo/chirripo
+```
+
+## Copy example variables file
+
+Copy example variables file from vendor/chirripo/chirripo/env.example to .env:
+
+```
+cp vendor/chirripo/chirripo/env.example .env
+```
+
+## Edit variables as needed
+
+Open .env file and change variables as needed. See [Variables description](/variables-description) to understand all existing variables.
 
 ## Start containers
 
-etc, etc, etc
+Start the containers by running:
 
-### Code blocks example
-
-``` python
-import tensorflow as tf
+```
+./vendor/bin/chirripo start
 ```
 
-``` bash
-./vendor/bin/chirripo ps
-```
+You are now ready to use Chirripo! Read the documentation about [available commands](/commands)
 
-!!! tip
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+## Advanced usage
 
-More examples of admonition: 
-https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+You can override even more stuff in your containers setup by creating a `docker-compose.override.yml` file in the root of your project to override any stuff in the provided docker-compose files. More documentation on overrides can be found in [official docker compose documentation](https://docs.docker.com/compose/extends/).

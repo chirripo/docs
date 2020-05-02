@@ -26,6 +26,10 @@ Only requirements are:
 
 Look at the existing commands in the [Commands](commands) page.
 
+## How-to
+
+Read How-to documentation in the [How-to](how-to) page.
+
 ## Updating Chirripo
 
 Updating Chirripo is as simple as updating any other composer package. Then, you could update your environment variables if new variables were added. 
