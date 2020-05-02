@@ -25,6 +25,9 @@ markdown_extensions:
   - codehilite:
       guess_lang: false
       linenums: true
+google_analytics:
+  - UA-165331258-2
+  - auto
 extra:
   social:
     - icon: fontawesome/brands/github-alt
