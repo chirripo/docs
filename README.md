@@ -1,3 +1,7 @@
 # Docs for Chirripo
 
-mkdocs repo for Chirripo docs.
+[![Build Status](https://travis-ci.org/chirripo/docs.svg?branch=master)](https://travis-ci.org/chirripo/docs)
+
+Docs for Chirripo
+
+You can access this docs at https://docs.chirripo.dev
