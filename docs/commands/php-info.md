@@ -1,3 +1,13 @@
 # php-info
 
-Documentation to be added
+Print php info from php container
+
+## Usage
+
+```
+./vendor/bin/chirripo php-info
+```
+
+## Aliases
+
+- phpi

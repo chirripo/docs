@@ -1,3 +1,13 @@
 # php-modules
 
-Documentation to be added
+Print php -m from php container
+
+## Usage
+
+```
+./vendor/bin/chirripo php-modules
+```
+
+## Aliases
+
+- phpm

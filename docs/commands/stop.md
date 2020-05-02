@@ -1,3 +1,13 @@
 # stop
 
-Documentation to be added
+Stops containers for current project.
+
+## Usage
+
+```
+./vendor/bin/chirripo stop
+```
+
+## Aliases
+
+No aliases defined.
