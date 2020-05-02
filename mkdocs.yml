@@ -29,6 +29,7 @@ nav:
     - How-to:
       - How-to guides: how-to/index.md
       - Setup Xdebug: how-to/setup-xdebug.md
+      - Setup Blackfire: how-to/setup-blackfire.md
     - Contributing: contributing.md
 theme:
   name: 'material'
