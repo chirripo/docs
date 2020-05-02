@@ -6,10 +6,14 @@ repo_name: 'chirripo/dcs'
 repo_url: 'https://github.com/chirripo/docs'
 nav:
     - Home: index.md
+    - Getting Started: getting-started.md
+    - Usage: usage.md
+    - Commands: commands/index.md
+    - Contributing: contributing.md
 theme:
   name: 'material'
   language: en
   palette:
     primary: green
-    accent: indigo
+    accent: purple
   logo: assets/images/logo.svg

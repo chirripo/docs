@@ -1,40 +1,35 @@
-## Sample
+## Chirripo Docs
 
-One more, finally. Or not? :)
+This is the official documentation for [Chirripo](https://chirripo.dev).
 
-Now:
+## What is Chirripo?
 
-```
-$ some 
-```
+Chirripo is the name of the tallest mountain in Costa Rica and it's also the name of this cool tool that we have created to simplify your Docker environment setup.
 
-Look what she said:
+## Why to use Chirripo?
 
-> This is it!
+Chirripo makes it possible to add a cool setup of Docker containers to any existing php application by simply adding a composer package.
 
-### Subtitle
+## How to use Chirripo?
 
-And now this:
+To use Chirripo, you need to add the composer package to any existing project, copy the environment variables file and then start using it. More information on [Getting Started](getting-started) page.
 
-- One
-- Two
-- Three
+## Requirements
 
+Only requirements are:
 
-#### As well
+- Have a composer managed project
+- Docker
+- Docker Compose
 
-#### As this
+## Existing commands
 
-### Another
+Look at the existing commands in the [Commands](commands) page.
 
-[a link](https://aws.com)
+## Updating Chirripo
 
-More?
+Updating Chirripo is as simple as updating any other composer package. Then, you could update your environment variables if new variables were added. 
 
+## Contributing
 
-Can we now have `the build`?
-
-NOW!
-
-
-Not gonna work, is it?
+You are welcomed to contribute to Chirripo. To do so, [check current issues](https://github.com/chirripo/chirripo/issues) or [create new issues](https://github.com/chirripo/chirripo/issues/new). More information at [Contributing](contributing)
