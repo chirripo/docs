@@ -2,23 +2,23 @@
 
 Are you interested in contributing to Chirripo? Want to report a bug? Before you do, please read the following guidelines.
 
-# Submission context
+## Submission context
 
-## Got a question or problem?
+### Got a question or problem?
 
 Please [submit an issue](https://github.com/chirripo/chirripo/issues/new) to the [issue tracker](https://github.com/chirripo/chirripo/issues). We will reply back as soon as possible.
 
-## Found a bug?
+### Found a bug?
 
 If you found a bug in the source code, you can help us by [submitting an issue](https://github.com/chirripo/chirripo/issues/new) to the [issue tracker](https://github.com/chirripo/chirripo/issues) in our [GitHub repository](https://github.com/chirripo/chirripo). Even better, you can submit a Pull Request with a fix. However, before doing so, please read the submission guidelines.
 
-## Missing a feature?
+### Missing a feature?
 
 You can request a new feature by submitting an issue to our GitHub Repository. If you would like to implement a new feature, please submit an issue with a proposal for your work first, to be sure that it is of use for everyone.
 
-# Submission guidelines
+## Submission guidelines
 
-## Submitting an issue
+### Submitting an issue
 
 Before you submit an issue, please search the [issue tracker](https://github.com/chirripo/chirripo/issues), maybe an issue for your problem already exists and the discussion might inform you of workarounds readily available.
 
@@ -26,7 +26,7 @@ We want to fix all the issues as soon as possible, but before fixing a bug we ne
 
 Unfortunately we are not able to investigate / fix bugs without a minimal reproduction scenario, so if we don't hear back from you we may close the issue.
 
-# Submitting a Pull Request (PR)
+### Submitting a Pull Request (PR)
 
 Search GitHub for an open or closed PR that relates to your submission. You don't want to duplicate effort. If you do not find a related issue or PR, go ahead.
 
