@@ -22,7 +22,7 @@ else
   cd repo
   git checkout gh-pages
   shopt -s extglob
-  rm -rf ./!(.git|.|..)
+  rm -rf !(.git)
   cp -r ../site/*
   cp -r ../images .
   cp -r ../CNAME .
