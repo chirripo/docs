@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euxo pipefail
+set -e pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$ROOT"
@@ -22,7 +22,7 @@ else
   cd repo
   git checkout gh-pages
   shopt -s extglob
-  rm -rf !(.git)
+  rm -rf !(.git|.|..)
   cp -r ../site/*
   cp -r ../images .
   cp -r ../CNAME .
