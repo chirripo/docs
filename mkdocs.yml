@@ -1,6 +1,6 @@
 site_name: Chirripo Docs
 site_description: 'Documentation site for Chirripo'
-site_author: 'Michael Hausenblas'
+site_author: 'Chirripo'
 docs_dir: docs/
 repo_name: 'chirripo/dcs'
 repo_url: 'https://github.com/chirripo/docs'
@@ -15,5 +15,19 @@ theme:
   language: en
   palette:
     primary: green
-    accent: purple
+    accent: light green
   logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/chirripo
+    - icon: fontawesome/brands/php
+      link: https://packagist.org/packages/chirripo/chirripo
