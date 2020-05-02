@@ -290,7 +290,21 @@
                 
                 
                 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<p>How to start?</p>
+<p>This page intends to be a quick-start guide for Chirripo.</p>
+<p>In order to start using it, the first step is to add the package to your project:</p>
+<p><code>composer require --dev chirripo/chirripo</code></p>
+<p>Then, you need to copy and edit the variables file:</p>
+<p><code>cp vendor/chirripo/chirripo/env.example .env</code></p>
+<p>And edit the file according to your needs. Please remember to change the following at least:</p>
+<ul>
+<li>PROJECT_NAME: so that it doesn't conflict with any other project using Chirripo</li>
+<li>PROJECT_ROOT: so that the mount volumes to the container work as expected</li>
+<li>PORT_PREFIX: there should be a different PORT_PREFIX for any project using Chirripo</li>
+</ul>
+<p>Then, you can start the containers:</p>
+<p><code>./vendor/bin/chirripo start</code></p>
+<p>Finally, enjoy your development environment!</p>
+<p>Please refer to the <a href="commands">Commands</a> to know about all the available commands.</p>
                 
               
               
