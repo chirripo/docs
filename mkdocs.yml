@@ -8,7 +8,22 @@ nav:
     - Home: index.md
     - Getting Started: getting-started.md
     - Usage: usage.md
-    - Commands: commands/index.md
+    - Commands:
+      - Available Commands: commands/index.md
+      - db-import: commands/db-import.md
+      - docker-compose: commands/docker-compose.md
+      - down: commands/down.md
+      - drush: commands/drush.md
+      - logs: commands/logs.md
+      - mysql: commands/mysql.md
+      - php-info: commands/php-info.md
+      - php-modules: commands/php-modules.md
+      - restart: commands/restart.md
+      - ssh: commands/ssh.md
+      - start: commands/start.md
+      - status: commands/status.md
+      - stop: commands/stop.md
+      - url: commands/url.md
     - Contributing: contributing.md
 theme:
   name: 'material'
