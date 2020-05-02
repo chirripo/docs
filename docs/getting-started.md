@@ -23,4 +23,4 @@ Then, you can start the containers:
 Finally, enjoy your development environment!
 
 
-Please refer to the [Commands](commands) to know about all the available commands.
+Please refer to the [Commands](commands/index) documentation to know about all the available commands.
