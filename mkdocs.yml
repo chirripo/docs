@@ -12,4 +12,4 @@ theme:
   palette:
     primary: green
     accent: indigo
-  logo: images/logo.svg
+  logo: assets/images/logo.svg
