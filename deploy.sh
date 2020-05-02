@@ -18,7 +18,7 @@ else
   ls -alh
   git clone -n -b gh-pages git@github.com:${GITHUB_REPOSITORY}.git repo
   cd repo
-  cp -r ../site/*
+  cp -r ../site/* .
   cp -r ../images .
   cp -r ../CNAME .
   git status
