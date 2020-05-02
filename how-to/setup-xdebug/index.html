@@ -508,10 +508,55 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Setup Xdebug
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Setup Xdebug" class="md-nav__link md-nav__link--active">
       Setup Xdebug
     </a>
     
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xdebug-setup-with-vscode" class="md-nav__link">
+    Xdebug setup with VSCode
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup-blackfire/" title="Setup Blackfire" class="md-nav__link">
+      Setup Blackfire
+    </a>
   </li>
 
         
@@ -549,6 +594,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xdebug-setup-with-vscode" class="md-nav__link">
+    Xdebug setup with VSCode
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -568,6 +630,53 @@
                 
                 
                 <h1 id="setup-xdebug">Setup xdebug<a class="headerlink" href="#setup-xdebug" title="Permanent link">&para;</a></h1>
+<p>In order to setup xdebug you need to:</p>
+<ul>
+<li>Set XDEBUG_ENABLED variable to "enable"</li>
+<li>Stop and start containers:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>./vendor/bin/chirripo stop
+./vendor/bin/chirripo start
+</code></pre></div>
+</td></tr></table>
+
+<p>You need to configure your code editor to use debugging. Find an example with VSCode below.</p>
+<p>Point your browser to the desired url using XDEBUG_SESSION_START query parameter like this:</p>
+<p><code>http://127.0.0.1:10080??XDEBUG_SESSION_START=anything</code></p>
+<h2 id="xdebug-setup-with-vscode">Xdebug setup with VSCode<a class="headerlink" href="#xdebug-setup-with-vscode" title="Permanent link">&para;</a></h2>
+<p>You need to edit your launch.json like this:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>{
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;name&quot;: &quot;Listen for XDebug&quot;,
+            &quot;type&quot;: &quot;php&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;port&quot;: 9000,
+            &quot;pathMappings&quot;: {
+                &quot;/var/www/html&quot;: &quot;${workspaceRoot}&quot;
+            }
+        }
+    ]
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>Then, you can Start Debugging</p>
                 
               
               
@@ -601,13 +710,13 @@
           </a>
         
         
-          <a href="../../contributing/" title="Contributing" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../setup-blackfire/" title="Setup Blackfire" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Contributing
+                Setup Blackfire
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
