@@ -10,7 +10,7 @@ Then, you need to copy and edit the variables file:
 
 `cp vendor/chirripo/chirripo/env.example .env`
 
-And edit the file according to your needs. Please remember to change the following at least:
+Edit the file according to your needs. Please remember to change at least the following variables:
 
 - PROJECT_NAME: so that it doesn't conflict with any other project using Chirripo
 - PROJECT_ROOT: so that the mount volumes to the container work as expected
@@ -21,7 +21,7 @@ Then, you can start the containers:
 
 `./vendor/bin/chirripo start`
 
-Finally, enjoy your development environment!
+And finally enjoy your development environment!
 
 
 Please refer to the [Commands](commands/index) documentation to know about all the available commands.
