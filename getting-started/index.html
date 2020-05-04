@@ -580,18 +580,27 @@
                 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
 <p>This page intends to be a quick-start guide for Chirripo.</p>
 <p>In order to start using it, the first step is to add the package to your project:</p>
-<p><code>composer require --dev chirripo/chirripo</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>composer require --dev chirripo/chirripo
+</code></pre></div>
+</td></tr></table>
+
 <p>Then, you need to copy and edit the variables file:</p>
-<p><code>cp vendor/chirripo/chirripo/env.example .env</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>cp vendor/chirripo/chirripo/env.example .env
+</code></pre></div>
+</td></tr></table>
+
 <p>Edit the file according to your needs. Please remember to change at least the following variables:</p>
 <ul>
-<li>PROJECT_NAME: so that it doesn't conflict with any other project using Chirripo</li>
-<li>PROJECT_ROOT: so that the mount volumes to the container work as expected</li>
-<li>PROJECT_DOCROOT: actual docroot within your project (e.g. web or docroot)</li>
-<li>PORT_PREFIX: there should be a different PORT_PREFIX for any project using Chirripo</li>
+<li><code>PROJECT_NAME</code>: so that it doesn't conflict with any other project using Chirripo</li>
+<li><code>PROJECT_ROOT</code>: so that the mount volumes to the container work as expected</li>
+<li><code>PROJECT_DOCROOT</code>: actual docroot within your project (e.g. web or docroot)</li>
+<li><code>PORT_PREFIX</code>: there should be a different PORT_PREFIX for any project using Chirripo</li>
 </ul>
 <p>Then, you can start the containers:</p>
-<p><code>./vendor/bin/chirripo start</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>./vendor/bin/chirripo start
+</code></pre></div>
+</td></tr></table>
+
 <p>And finally enjoy your development environment!</p>
 <p>Please refer to the <a href="commands/index">Commands</a> documentation to know about all the available commands.</p>
                 
