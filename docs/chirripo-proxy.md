@@ -16,7 +16,7 @@ php composer.phar global config bin-dir --absolute
 
 ## Requirements
 
-- You need ports 80 & 8085 free to use this proxy.
+- By default, the proxy will need ports 80 & 8085 to run.
 
 ## Start proxy
 
@@ -46,3 +46,17 @@ VIRTUAL_HOST=mycoolproject.docker
 
 - Stop proxy by running `chirripo-proxy down`
 - Ready!
+
+## Advanced configuration
+
+If you need to change the ports, you should define `CHIRRIPO_PROXY_PORT` and/or `CHIRRIPO_PROXY_DASHBOARD_PORT` variables when running the proxy commands. Example:
+
+```
+CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo-proxy up
+```
+
+Or, if using the launcher:
+
+```
+CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo proxy-up
+```
