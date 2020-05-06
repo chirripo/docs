@@ -26,6 +26,14 @@ Only requirements are:
 
 Look at the existing commands in the [Commands](commands) page.
 
+## Chirripo Launcher
+
+See launcher docs at [Chirripo Launcher](/chirripo-launcher)
+
+## Chirripo Proxy
+
+See proxy docs at [Chirripo Proxy](/chirripo-proxy)
+
 ## How-to
 
 Read How-to documentation in the [How-to](how-to) page.

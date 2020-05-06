@@ -9,6 +9,8 @@ nav:
     - Getting Started: getting-started.md
     - Usage: usage.md
     - Variables description: variables-description.md
+    - Chirripo Launcher: chirripo-launcher.md
+    - Chirripo Proxy: chirripo-proxy.md
     - Commands:
       - Available Commands: commands/index.md
       - db-import: commands/db-import.md

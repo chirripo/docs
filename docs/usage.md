@@ -38,6 +38,14 @@ Start the containers by running:
 
 You are now ready to use Chirripo! Read the documentation about [available commands](/commands)
 
+## Chirripo Launcher
+
+See launcher docs at [Chirripo Launcher](/chirripo-launcher)
+
+## Chirripo Proxy
+
+See proxy docs at [Chirripo Proxy](/chirripo-proxy)
+
 ## Advanced usage
 
 You can override even more stuff in your containers setup by creating a `docker-compose.override.yml` file in the root of your project to override any stuff in the provided docker-compose files. More documentation on overrides can be found in [official docker compose documentation](https://docs.docker.com/compose/extends/).
