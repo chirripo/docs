@@ -306,6 +306,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#advanced-configuration" class="md-nav__link">
+    Advanced configuration
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -659,6 +666,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#advanced-configuration" class="md-nav__link">
+    Advanced configuration
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -696,7 +710,7 @@
 </ul>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul>
-<li>You need ports 80 &amp; 8085 free to use this proxy.</li>
+<li>By default, the proxy will need ports 80 &amp; 8085 to run.</li>
 </ul>
 <h2 id="start-proxy">Start proxy<a class="headerlink" href="#start-proxy" title="Permanent link">&para;</a></h2>
 <ul>
@@ -731,6 +745,16 @@
 <li>Stop proxy by running <code>chirripo-proxy down</code></li>
 <li>Ready!</li>
 </ul>
+<h2 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h2>
+<p>If you need to change the ports, you should define <code>CHIRRIPO_PROXY_PORT</code> and/or <code>CHIRRIPO_PROXY_DASHBOARD_PORT</code> variables when running the proxy commands. Example:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo-proxy up
+</code></pre></div>
+</td></tr></table>
+
+<p>Or, if using the launcher:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo proxy-up
+</code></pre></div>
+</td></tr></table>
                 
               
               
