@@ -11,7 +11,7 @@ PROJECT_DOCROOT  | The path to the docroot within your project root (e.g. web or
 PROJECT_NAME | The name of the project. Used to prefix the containers names.
 PORT_PREFIX | 3 digits prefix for the ports used to expose the different services.
 VIRTUAL_HOST | Base domain name to use if proxy is being used
-OTHER_VIRTUAL_HOSTS | Additional domain names to use for nginx service (Optional). Format: `OTHER_VIRTUAL_HOSTS="``domainname.tld``,``otherdomain.tld``"`
+OTHER_VIRTUAL_HOSTS | Additional domain names to use for nginx service (Optional). Format: ``OTHER_VIRTUAL_HOSTS="`domainname.tld`,`otherdomain.tld`"``
 
 ## Nginx container
 
