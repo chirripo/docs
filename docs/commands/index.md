@@ -6,6 +6,7 @@ This is a list of existing commands:
 - [docker-compose](docker-compose)
 - [down](down)
 - [drush](drush)
+- [hosts](hosts)
 - [logs](logs)
 - [mysql](mysql)
 - [php-info](php-info)

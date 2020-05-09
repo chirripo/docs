@@ -17,6 +17,7 @@ nav:
       - docker-compose: commands/docker-compose.md
       - down: commands/down.md
       - drush: commands/drush.md
+      - hosts: commands/hosts.md
       - list: commands/list.md
       - logs: commands/logs.md
       - mysql: commands/mysql.md

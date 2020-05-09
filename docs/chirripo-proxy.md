@@ -40,6 +40,8 @@ VIRTUAL_HOST=mycoolproject.docker
 127.0.0.1 mycoolproject.docker varnish.mycoolproject.docker mailhog.mycoolproject.docker solr.mycoolproject.docker
 ```
 
+You can also use `hosts` command from chirripo to get this line.
+
 - Access your site at url set in VIRTUAL_HOST variable. You can also access the optional services at the above domains if the services are enabled.
 
 ## Stop proxy
