@@ -10,4 +10,4 @@ Print hosts entry that should be written in /etc/hosts.
 
 ## Aliases
 
-- hosts
+No aliases defined.
