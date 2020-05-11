@@ -617,10 +617,23 @@
 <p>You can install the <a href="https://packagist.org/packages/chirripo/chirripo-launcher">Launcher</a> to use Chirripo commands by simply using <code>chirripo</code> command.</p>
 <p>In order to use it, you should follow these instructions:</p>
 <ul>
-<li>Install either globally (<code>composer global require chirripo/chirripo-launcher</code>) or by using <a href="https://packagist.org/packages/consolidation/cgr">cgr</a> (<code>cgr chirripo/chirripo-launcher</code>)</li>
-<li>Now the <code>chirripo</code> binary is available globally. Make sure your global vendor binaries directory is in your $PATH environment variable, you can get its location with the following command:</li>
+<li>Download latest stable release via CLI (code below) or browse to https://github.com/chirripo/chirripo-launcher/releases/latest.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>php composer.phar global config bin-dir --absolute
+<p>OSX:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>curl -OL https://github.com/chirripo/chirripo-launcher/releases/latest/download/chirripo.phar
+</code></pre></div>
+</td></tr></table>
+
+<p>Linux:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>wget -O chirripo.phar https://github.com/chirripo/chirripo-launcher/releases/latest/download/chirripo.phar
+</code></pre></div>
+</td></tr></table>
+
+<ul>
+<li>Make downloaded file executable: chmod +x chirripo.phar</li>
+<li>Move chirripo.phar to a location listed in your $PATH, rename to chirripo:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo mv chirripo.phar /usr/local/bin/chirripo
 </code></pre></div>
 </td></tr></table>
 
