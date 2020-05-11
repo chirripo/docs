@@ -4,7 +4,7 @@ You can install the [Launcher](https://packagist.org/packages/chirripo/chirripo-
 
 In order to use it, you should follow these instructions:
 
-- Download latest stable release via CLI (code below) or browse to https://github.com/chirripo/chirripo-launcher/releases/latest.
+- Download latest stable release via CLI (code below) or browse to [https://github.com/chirripo/chirripo-launcher/releases/latest](https://github.com/chirripo/chirripo-launcher/releases/latest.).
 
 OSX:
 ```
