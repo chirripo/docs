@@ -34,6 +34,7 @@ nav:
       - Setup Xdebug: how-to/setup-xdebug.md
       - Setup Blackfire: how-to/setup-blackfire.md
       - Override Solr config: how-to/override-solr-config.md
+      - Add Secondary DB: how-to/add-secondary-db.md
     - Contributing: contributing.md
 theme:
   name: 'material'
