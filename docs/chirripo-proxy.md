@@ -51,14 +51,14 @@ You can also use `hosts` command from chirripo to get this line.
 
 ## Advanced configuration
 
-If you need to change the ports, you should define `CHIRRIPO_PROXY_PORT` and/or `CHIRRIPO_PROXY_DASHBOARD_PORT` variables when running the proxy commands. Example:
+If you need to change the ports, you should define `CHIRRIPO_PROXY_PORT`, `CHIRRIPO_PROXY_SECURE_PORT` and/or `CHIRRIPO_PROXY_DASHBOARD_PORT` variables when running the proxy commands. Example:
 
 ```
-CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo-proxy up
+CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_SECURE_PORT=443 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo-proxy up
 ```
 
 Or, if using the launcher:
 
 ```
-CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo proxy-up
+CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_SECURE_PORT=443 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo proxy-up
 ```
