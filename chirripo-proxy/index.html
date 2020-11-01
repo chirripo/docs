@@ -739,7 +739,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>php composer.phar global config bin-dir --absolute
 </code></pre></div>
 </td></tr></table>
-
 <ul>
 <li>Use Chirripo proxy by simply invoking <code>chirripo-proxy</code> from any folder</li>
 <li>If you have <a href="https://packagist.org/packages/chirripo/chirripo-launcher">Chirripo launcher</a> installed; you can also invoke proxy from it with <code>chirripo proxy-up</code> and <code>chirripo proxy-down</code> commands.</li>
@@ -755,7 +754,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>VIRTUAL_HOST=mycoolproject.docker
 </code></pre></div>
 </td></tr></table>
-
 <ul>
 <li>Restart your Chirripo containers with the following containers:</li>
 </ul>
@@ -764,7 +762,6 @@
 ./vendor/bin/chirripo start
 </code></pre></div>
 </td></tr></table>
-
 <ul>
 <li>Start proxy by running <code>chirripo-proxy up</code></li>
 <li>Add hosts entries to your hosts file (/etc/hosts for Linux/Mac) like this:</li>
@@ -772,7 +769,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>127.0.0.1 mycoolproject.docker varnish.mycoolproject.docker mailhog.mycoolproject.docker solr.mycoolproject.docker
 </code></pre></div>
 </td></tr></table>
-
 <p>You can also use <code>hosts</code> command from chirripo to get this line.</p>
 <ul>
 <li>Access your site at url set in VIRTUAL_HOST variable. You can also access the optional services at the above domains if the services are enabled.</li>
@@ -787,7 +783,6 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_SECURE_PORT=443 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo-proxy up
 </code></pre></div>
 </td></tr></table>
-
 <p>Or, if using the launcher:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>CHIRRIPO_PROXY_PORT=80 CHIRRIPO_PROXY_SECURE_PORT=443 CHIRRIPO_PROXY_DASHBOARD_PORT=8085 chirripo proxy-up
 </code></pre></div>
