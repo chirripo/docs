@@ -34,6 +34,6 @@ Search GitHub for an open or closed PR that relates to your submission. You don'
 
 2. Test: Before submitting a pull requests, test all of your changes. To do so, you can add the project to any existing PHP project by using [Composer Path Repository](https://getcomposer.org/doc/05-repositories.md#path) (you can use [TravisCI setup](https://github.com/chirripo/chirripo/blob/master/.travis.yml) as an example). This is a mandatory requirement for your PR to get accepted, as the package should at all times be installable through Packagist.
 
-3. Pull Request: After building the theme, commit the compiled output, push your branch to GitHub and send a PR to chirripo/chirripo:master. If we suggest changes, make the required updates, rebase your branch and push the changes to your GitHub repository, which will automatically update your PR. At all times, please ensure the automated build passes so that a minimal amount of tests are passed for your code.
+3. Pull Request: After testing, commit your changes, push your branch to GitHub and send a PR to the right project. If we suggest changes, make the required updates, rebase your branch and push the changes to your GitHub repository, which will automatically update your PR. At all times, please ensure the automated build passes so that a minimal amount of tests are passed for your code.
 
 After your PR is merged, you can safely delete your branch and pull the changes from the main (upstream) repository.
